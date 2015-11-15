@@ -1,2 +1,5 @@
-# mongoDB
-mongoDB ebook translation for those who want to learn mongoDB in Chinese.
+# MongoDB & PHP
+
+## MongoDB and PHP ebook translation for those who want to learn mongoDB and PHP in Chinese.
+
+* more contents are coming soon ...
