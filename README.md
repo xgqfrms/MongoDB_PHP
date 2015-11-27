@@ -4,7 +4,9 @@
 
 ##  Preview Release !
 
-* 要在offline浏览，请访问(https://github.com/xgqfrms/MongoDB_PHP/blob/master/MongoDB%20and%20PHP.docx?raw=true)打印成pdf即可！
+* 要在offline浏览，请访问[MongoDB&PHP
+](https://github.com/xgqfrms/MongoDB_PHP/blob/master/MongoDB%20and%20PHP.docx?raw=true)
+* 打印成pdf即可！
 
 * 要在online浏览，将下边的html 代码保存在一个空白的index.html 文件中,在浏览器打开即可！
 
