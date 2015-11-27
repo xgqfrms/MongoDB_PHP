@@ -7,7 +7,7 @@
 * 要在offline浏览，请访问[MongoDB&PHP
 ](https://github.com/xgqfrms/MongoDB_PHP/blob/master/MongoDB%20and%20PHP.docx?raw=true) 保存word文档即可！
 
-* 要在online浏览，将下边的html 代码保存在一个空白的index.html 文件中,在浏览器打开即可！
+* 要在online浏览，将下边的html 代码保存在一个空白的index.html 文件中,在浏览器(Chrome)打开即可！
 
 ```html
 <!DOCTYPE html>
@@ -44,7 +44,7 @@
 <p>github doc</p>
 <div>
     <section>
-        <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/xgqfrms/MongoDB_PHP/blob/master/MongoDB%20and%20PHP.docx?raw=true' width='610px' height='367px' frameborder='0'>
+        <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/xgqfrms/MongoDB_PHP/blob/master/MongoDB%20and%20PHP.docx?raw=true' width='960px' height='540px' frameborder='0'>
             This is an embedded
             <a target='_blank' href='http://office.com'>Microsoft Office</a>
             presentation, powered by
