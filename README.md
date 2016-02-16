@@ -1,6 +1,5 @@
-MongoDB and PHP(中文翻译) xgqfms 2015-02-01
-                                                                   Chapter 1
-                                                             Why MongoDB?
+#MongoDB and PHP(中文翻译) xgqfms 2015-02-01
+## Chapter 1     Why MongoDB?
 导致第一次dot-com(网络公司)崩溃的问题之一就是这巨大的开发费用,尤其是服务软件.一组新的并且切实可行的开源工具从第一次dot-com的灰烬中出现,并且变成下一代Internet的基础.在2001年的夏天,一种新的首字母缩略词出现了;LAMP-Linux,Apache,MySQL和PHP-变成一代开发者全体选择的平台.正是那样,PHP和MySQL联姻了(毕竟，它们彼此依靠).它们似乎是被设计的彼此永远在一起．
 
 The Problem of Objects and Relational Data Structures
