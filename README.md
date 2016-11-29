@@ -150,7 +150,7 @@ Sharding
 
 Gotchas
 
-                                                                       CHAPTER 4
+                                                                  CHAPTER 4
 PHP Libraries and Tools
 
 Object Document Mappers (ODM)
