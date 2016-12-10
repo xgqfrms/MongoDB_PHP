@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mongodb php by xgqfrms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Mongodb php</h1>
+      <h2 class="project-tagline">mongoDB ebook translation for those who want to learn mongoDB in Chinese.</h2>
+      <a href="https://github.com/xgqfrms/MongoDB_PHP" class="btn">View on GitHub</a>
+      <a href="https://github.com/xgqfrms/MongoDB_PHP/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/xgqfrms/MongoDB_PHP/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="mongodb-and-php中文翻译-xgqfms-2015-02-01" class="anchor" href="#mongodb-and-php%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91-xgqfms-2015-02-01" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MongoDB and PHP(中文翻译) xgqfms 2015-02-01</h1>
+
+<p>ionic.xgqfrms.xyz</p>
+
+<h2>
+<a id="chapter-1-----why-mongodb" class="anchor" href="#chapter-1-----why-mongodb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Chapter 1     Why MongoDB?</h2>
+
+<p>导致第一次dot-com(网络公司)崩溃的问题之一就是这巨大的开发费用,尤其是服务软件.一组新的并且切实可行的开源工具从第一次dot-com的灰烬中出现,并且变成下一代Internet的基础.在2001年的夏天,一种新的首字母缩略词出现了;LAMP-Linux,Apache,MySQL和PHP-变成一代开发者全体选择的平台.正是那样,PHP和MySQL联姻了(毕竟，它们彼此依靠).它们似乎是被设计的彼此永远在一起．</p>
+
+<p>The Problem of Objects and Relational Data Structures
+  这里只有一个问题.PHP一开始是作为一种模板语言-自然地,渐渐地接受对象. PHP 过去用于复杂的应用程序并且php一贯的改进为了满足这些不断增长的需求.实际上在模板文件中写原始的SQL查询语句的操作很快,因为不能接受的(有人说这从来不接受).随着这个问题越来越复杂,为了解决PHP使用对象(或数组)和MySQL(和其他关系型数据库)使用表,行,列 带来的不断地增长的问题,工具被写了出来.
+ 这不是一个针对PHP的问题.几十年来,人们已经建造了工具和库文件,为了自动化翻译对象到关系数据结构的处理过程.最流行的集合是名叫ORMs(对象关系制图人).ORMs被建造是为了解决SQL的问题.它们的销售定位于: 使用ORM,因为它屏蔽所有数据存储肮脏的细节.,因此所有你以前需要触摸的现在是你的友好地PHP对象.虽然工具出现做了一个合理的工作在保证更好实现上,它们从来没有真正的完美的工作.首先,你总是需要去记忆在这些对象后面的一个关系数据库,就表格,行和列而言.其次,这些ORMs 伴随着高昂的代价.它们增加了很多复杂性和应用程序的开销且仅保留了SQLs特征的子集.随着它们的发展,它很快变成了这样的一个事实,学习ORM是一件比首先学习SQL更加耗费时间的事.
+有充足的理由这样说,虽然ORMs 在很大的程度上解决了SQL的问题,它却伴随着ORMs自身的问题.
+The Problem with ORMs
+The objective of an ORM may be simple, but the solution never is.
+一个ORM的目标也许是简单的,但是在这个解决方案从来不会.
+ORMs Are Hairy and Complex(既危险有复杂)
+Propel 和 Doctrine 是PHP上两个最流行的ORMs. Propel 遵从一个活跃的记录模型.Doctrine遵从hibernate.这两个项目都相当大,有上万行代码构成.Doctrine 也提供自己的类似SQL的查询语言,叫做DQL,所以为了使用Doctrine你需要同时知道SQL和DQL. </p>
+
+<p>ORMs Aren’t Performant(???)
+ORMs 的核心目标是方便开发人员.一个ORM的核心目标是给与开发者方便,当他们创建
+把数据库的表,行和列翻译成你的语言对象.</p>
+
+<p>ORMs Neutered SQL</p>
+
+<p>CRUD(创建,查询,更新,删除)
+Complicated Architecture</p>
+
+<p>PHP Is Mostly CRUD</p>
+
+<p>MongoDB, Optimized for Operation</p>
+
+<p>MongoDB Is a Document Database</p>
+
+<p>Document == Array</p>
+
+<p>MongoDB Is Optimized for CRUD Operations</p>
+
+<p>Optimal Interface for Developers</p>
+
+<p>Optimal Performance</p>
+
+<p>Optimal Simplicity</p>
+
+<p>The Value of Consistency</p>
+
+<p>CHAPTER 2 
+PHP, MongoDB, and You</p>
+
+<p>Installing the Driver on Linux or MacOS X</p>
+
+<p>Checking for the Driver
+Installing the Driver</p>
+
+<p>Upgrading the Driver</p>
+
+<p>Installing the Driver on Windows</p>
+
+<p>Connecting to a Database</p>
+
+<p>Connecting to a MongoDB Database Server</p>
+
+<p>Selecting a Database</p>
+
+<p>The Basics (CRUD Operations)</p>
+
+<p>Creating/Selecting a Collection</p>
+
+<p>Creating a Document</p>
+
+<p>Primary Keys and ObjectIds</p>
+
+<p>Reading a Document</p>
+
+<p>Updating a Document</p>
+
+<p>Saving a Document</p>
+
+<p>Deleting a Document</p>
+
+<p>The MongoDB Shell</p>
+
+<p>mongo</p>
+
+<p>Using the Shell</p>
+
+<p>Administrative Commands</p>
+
+<p>Working with Sets</p>
+
+<p>Querying Sets</p>
+
+<p>Finding (Querying) Data in MongoDB</p>
+
+<p>Pagination with the Cursor</p>
+
+<p>Ranges</p>
+
+<p>Working with Arrays</p>
+
+<p>Conditionals</p>
+
+<p>Working with Multiple Documents</p>
+
+<p>Working with Indexes</p>
+
+<p>Setting Indexes</p>
+
+<p>Index Order</p>
+
+<p>About Indexes</p>
+
+<p>Compound Indexes</p>
+
+<p>Indexing Arrays</p>
+
+<p>Indexes and Memory</p>
+
+<p>Database References</p>
+
+<p>References Are Not Foreign Keys</p>
+
+<p>When to Use References or Reference versus Embed</p>
+
+<p>How to Create References</p>
+
+<p>How to Access DBRefs</p>
+
+<p>Dates and Times</p>
+
+<pre><code>                                                               CHAPTER 3
+</code></pre>
+
+<p>Advanced MongoDB</p>
+
+<p>Regular Expressions</p>
+
+<p>Aggregation Commands</p>
+
+<p>findAndModify</p>
+
+<p>GridFS</p>
+
+<p>Replication</p>
+
+<p>Sharding</p>
+
+<p>Gotchas</p>
+
+<pre><code>                                                                   CHAPTER 4
+</code></pre>
+
+<p>PHP Libraries and Tools</p>
+
+<p>Object Document Mappers (ODM)</p>
+
+<p>Tools</p>
+
+<p>Frameworks</p>
+
+<pre><code>                                                               CHAPTER 5
+</code></pre>
+
+<p>Conclusion</p>
+
+<p>About the Author</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/xgqfrms/MongoDB_PHP">Mongodb php</a> is maintained by <a href="https://github.com/xgqfrms">xgqfrms</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
