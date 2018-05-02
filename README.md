@@ -1,11 +1,17 @@
-#MongoDB and PHP(中文翻译) xgqfms 2015-02-01
-## Chapter 1     Why MongoDB?
-导致第一次dot-com(网络公司)崩溃的问题之一就是这巨大的开发费用,尤其是服务软件.一组新的并且切实可行的开源工具从第一次dot-com的灰烬中出现,并且变成下一代Internet的基础.在2001年的夏天,一种新的首字母缩略词出现了;LAMP-Linux,Apache,MySQL和PHP-变成一代开发者全体选择的平台.正是那样,PHP和MySQL联姻了(毕竟，它们彼此依靠).它们似乎是被设计的彼此永远在一起．
+# MongoDB and PHP(中文翻译)
 
-The Problem of Objects and Relational Data Structures
+> xgqfms 2015-02-01
+
+## Chapter 1     Why MongoDB?
+
+导致第一次dot-com(网络公司)崩溃的问题之一就是这巨大的开发费用, 尤其是服务软件. 一组新的并且切实可行的开源工具从第一次dot-com的灰烬中出现, 并且变成下一代Internet的基础.在2001年的夏天, 一种新的首字母缩略词出现了; `LAMP-Linux`, `Apache`, `MySQL` 和 `PHP` 变成一代开发者全体选择的平台. 正是那样, `PHP` 和 `MySQL` 联姻了(毕竟，它们彼此依靠). 它们似乎是被设计的彼此永远在一起．
+
+### The Problem of Objects and Relational Data Structures
+
   这里只有一个问题.PHP一开始是作为一种模板语言-自然地,渐渐地接受对象. PHP 过去用于复杂的应用程序并且php一贯的改进为了满足这些不断增长的需求.实际上在模板文件中写原始的SQL查询语句的操作很快,因为不能接受的(有人说这从来不接受).随着这个问题越来越复杂,为了解决PHP使用对象(或数组)和MySQL(和其他关系型数据库)使用表,行,列 带来的不断地增长的问题,工具被写了出来.
  这不是一个针对PHP的问题.几十年来,人们已经建造了工具和库文件,为了自动化翻译对象到关系数据结构的处理过程.最流行的集合是名叫ORMs(对象关系制图人).ORMs被建造是为了解决SQL的问题.它们的销售定位于: 使用ORM,因为它屏蔽所有数据存储肮脏的细节.,因此所有你以前需要触摸的现在是你的友好地PHP对象.虽然工具出现做了一个合理的工作在保证更好实现上,它们从来没有真正的完美的工作.首先,你总是需要去记忆在这些对象后面的一个关系数据库,就表格,行和列而言.其次,这些ORMs 伴随着高昂的代价.它们增加了很多复杂性和应用程序的开销且仅保留了SQLs特征的子集.随着它们的发展,它很快变成了这样的一个事实,学习ORM是一件比首先学习SQL更加耗费时间的事.
 有充足的理由这样说,虽然ORMs 在很大的程度上解决了SQL的问题,它却伴随着ORMs自身的问题.
+
 The Problem with ORMs
 The objective of an ORM may be simple, but the solution never is.
 一个ORM的目标也许是简单的,但是在这个解决方案从来不会.
